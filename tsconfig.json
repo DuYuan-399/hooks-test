@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "compilerOptions": {
+    "target": "ES5", // 产出标准
+    "moduleResolution": "node", // 当前模块的格式为node
+    "jsx": "react", // jsx为react格式
+    "esModuleInterop": true, //
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "baseUrl": ".", // 相对路径
+    "paths": {
+      "@/*": ["src/*"],
+      "encodeHooks": ["./packages/hooks/src/index.ts"],
+      "encode-hooks": ["./packages/hooks/src/index.ts"],
+      "encodeHooks/lib/*": ["./packages/hooks/src/*"],
+      "encode-hooks/lib/*": ["./packages/hooks/src/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true, // 跳过对.d.ts文件的检查
+    "strictNullChecks": true, // 类型检查时，考虑null和undefined
+    "importHelpers": true // 允许每个项目从tslib导入一次辅助函数，而不是每个文件都包含这些函数
+  },
+  "exclude": ["node_modules", "lib", "es", "dist", "example"]
+}
