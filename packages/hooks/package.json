@@ -19,7 +19,7 @@
   "repository": "https://github.com/encode-studio-fe/encode-hooks",
   "homepage": "https://github.com/encode-studio-fe/encode-hooks",
   "scripts": {
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && gulp && webpack-cli"
+    "build": "gulp && webpack-cli"
   },
   "files": [
     "dist",
