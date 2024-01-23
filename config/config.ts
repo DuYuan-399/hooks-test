@@ -24,7 +24,7 @@ export default {
   mode: 'site',
   title: 'encode react hooks',
   favicon: '/hooks-test/avatar.png',
-  logo: '/hooks-test/logo.png',
+  logo: '/hooks-test/avatar.png',
   dynamicImport: {},
   manifest: {},
   hash: true,
