@@ -8,6 +8,7 @@ export default {
     type: 'none',
     exclude: [],
   },
+  publicPath: '/hooks-test/',
   history: { type: 'hash' },
   // 使用babel插件进行按需加载
   extraBabelPlugins: [
@@ -22,8 +23,8 @@ export default {
   ],
   mode: 'site',
   title: 'encode react hooks',
-  favicon: '/avatar.png',
-  logo: '/logo.png',
+  favicon: '/hooks-test/avatar.png',
+  logo: '/hooks-test/logo.png',
   dynamicImport: {},
   manifest: {},
   hash: true,
@@ -54,13 +55,13 @@ export default {
     '/': [
       {
         title: '首页',
-        // path: 'index',
+        path: 'index',
       },
     ],
     '/guide': [
       {
         title: '介绍',
-        // path: '/guide',
+        path: '/guide',
       },
     ],
     '/hooks': menus,
